@@ -1,6 +1,9 @@
 import React from "react";
 
 function App() {
+  function salvarDados(){
+    alert("Dados Guardados")
+  }
   return (
     <div>
       <header>
@@ -22,7 +25,7 @@ function App() {
         <label for="txttarea">Endereço:</label><br></br>
         <textarea id="txtarea" placeholder="Informe seu endreço, rua, número, complementos etc..." cols="40" rows="10"></textarea><br></br><br></br>
 
-        ⇨<input className="button" type={"submit"} value="Guardar Dados" onClick="salvarDados()"></input>⇦
+        ⇨<input className="button" type={"submit"} value="Guardar Dados" onClick={salvarDados}></input>⇦
       </form>
      
     </div>
